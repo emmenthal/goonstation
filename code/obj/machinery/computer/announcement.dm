@@ -129,7 +129,10 @@
 			msg_sound = 'sound/misc/flockmind/flockmind_caw.ogg'
 
 		var/area/A = get_area(src)
-		var/header = "[src.area_name || A.name] Announcement by [ID.registered] ([ID.assignment])"
+		var/header = "[src.area_name || A.name] Announcement"
+		if (!istype(src, /obj/machinery/computer/announcement/syndicate))
+			header += " by [ID.registered] ([ID.assignment])"
+
 		command_announcement(message, header, msg_sound, volume = src.sound_volume, alert_origin = src.alert_origin)
 		ON_COOLDOWN(user,"announcement_computer",announcement_delay)
 		return TRUE
