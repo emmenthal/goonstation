@@ -1,5 +1,9 @@
 
 (t)wed may 06 26
+(u)DisturbHerb
+(p)26522
+(e)🆕💅🔊📄👽🤖|C-Feature, C-QoL, C-Sound, A-UI, A-Mutantraces, A-Silicons
+(+)Fart volume may now be adjusted in your audio settings.
 (u)Pirate-Rob
 (p)26427
 (e)🔎💅💡|C-Code-Quality, C-QoL, A-Station-Systems
