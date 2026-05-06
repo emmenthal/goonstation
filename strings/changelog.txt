@@ -1,5 +1,9 @@
 
 (t)wed may 06 26
+(u)Soulware
+(p)26385
+(e)🎨|C-Sprites
+(+)You can smooth out a brain using a washing machine now. (sprite by skeletonman0)
 (u)JORJ949
 (p)26444
 (e)🆕💡|C-Feature, A-Station-Systems
