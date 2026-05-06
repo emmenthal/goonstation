@@ -1,5 +1,9 @@
 
 (t)wed may 06 26
+(u)Nexusuxen
+(p)26437
+(e)🆕📦|C-Feature, A-Game-Objects
+(+)You can now use a wrench to (un)anchor pipe dispensers and drag them around.
 (u)Soulware
 (p)26385
 (e)🎨|C-Sprites
