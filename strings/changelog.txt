@@ -1,5 +1,7 @@
 
 (t)wed may 06 26
+(+)The auth disk will now spawn in place of the captain if there isn't one at roundstart.
+(+)The auth disk will now be shipped to cargo if anyone cryos with it.
 (u)glowbold
 (e)💅🧛|C-QoL, A-Gamemodes
 (*)The Syndicate Announcement computer no longer forces you to share your ID name/job in announcements.
