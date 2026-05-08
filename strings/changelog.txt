@@ -1,4 +1,9 @@
 
+(t)fri may 08 26
+(u)LeahTheTech
+(p)26530
+(e)🆕🎨⚖🧛⏰🤖💡|C-Feature, C-Sprites, C-Balance, A-Gamemodes, A-Status-Effects, A-Silicons, A-Station-Systems
+(*)Security cameras now light up blue when someone is watching you through them, including AI eyes.
 (t)wed may 06 26
 (u)DisturbHerb
 (p)26522
