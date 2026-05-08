@@ -1,5 +1,10 @@
 
 (t)fri may 08 26
+(u)nova2053
+(p)26526
+(e)⚖⚗|C-Balance, A-Chemistry
+(+)Medical scanners now indicate sugar overdose at 80 units rather than 200 units, better indicating at which point sugar overdose becomes dangerous.
+(+)Sugar will now cause hyperglycemic shock at 160 units instead of 200 units.
 (u)LeahTheTech
 (p)26530
 (e)🆕🎨⚖🧛⏰🤖💡|C-Feature, C-Sprites, C-Balance, A-Gamemodes, A-Status-Effects, A-Silicons, A-Station-Systems
