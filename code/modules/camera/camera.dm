@@ -275,7 +275,9 @@
 /obj/machinery/camera/proc/connect_viewer(var/mob/viewer)
 	if (QDELETED(viewer) || !istype(viewer))
 		return FALSE
+	SEND_SIGNAL(viewer, COMSIG_MOB_CANCEL_CAMERA)
 	if (src.camera_status)
+		src.RegisterSignal(viewer, COMSIG_MOB_CANCEL_CAMERA, PROC_REF(disconnect_viewer))
 		LAZYLISTADD(src.viewers, viewer)
 		var/datum/component/camera_coverage_emitter/emitter = src.GetComponent(/datum/component/camera_coverage_emitter)
 		emitter.register_user(viewer)
@@ -284,10 +286,12 @@
 
 /// Disconnect a viewer from this camera
 /obj/machinery/camera/proc/disconnect_viewer(var/mob/viewer)
-	if (istype(viewer))
-		LAZYLISTREMOVE(src.viewers, viewer)
-		var/datum/component/camera_coverage_emitter/emitter = src.GetComponent(/datum/component/camera_coverage_emitter)
-		emitter?.unregister_user(viewer)
+	if (!istype(viewer) || !(viewer in src.viewers))
+		return
+	src.UnregisterSignal(viewer, COMSIG_MOB_CANCEL_CAMERA)
+	LAZYLISTREMOVE(src.viewers, viewer)
+	var/datum/component/camera_coverage_emitter/emitter = src.GetComponent(/datum/component/camera_coverage_emitter)
+	emitter?.unregister_user(viewer)
 	if (!QDELETED(viewer))
 		viewer.set_eye(null)
 
