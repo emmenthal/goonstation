@@ -1,6 +1,6 @@
 (t)sat may 09 26
 (u)LeahTheTech
-(*)Blowgun kockout darts now contain the faster acting sodium thiopental rather than ketamine.
+(*)Blowgun knockout darts now contain the faster acting sodium thiopental rather than ketamine.
 (t)fri may 08 26
 (u)nova2053
 (p)26526
