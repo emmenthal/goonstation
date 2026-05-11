@@ -1,3 +1,6 @@
+(t)mon may 11 26
+(u)LeahTheTech
+(+)If there is no captain in the round, Jones will now guard the auth disk.
 (t)sat may 09 26
 (u)LeahTheTech
 (*)Blowgun knockout darts now contain the faster acting sodium thiopental rather than ketamine.
