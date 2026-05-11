@@ -32,6 +32,7 @@
 (p)26444
 (e)🆕💡|C-Feature, A-Station-Systems
 (+)Washing machines now take mechcomp inputs.
+(u)LeahTheTech
 (+)The auth disk will now spawn in place of the captain if there isn't one at roundstart.
 (+)The auth disk will now be shipped to cargo if anyone cryos with it.
 (u)glowbold
