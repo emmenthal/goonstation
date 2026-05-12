@@ -122,6 +122,7 @@
 			return
 
 		message = user.say(message, flags = SAYFLAG_DO_NOT_OUTPUT)?.content
+		message = sanitize(adminscrub(message))
 		if (!message)
 			return
 
