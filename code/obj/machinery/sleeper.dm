@@ -746,8 +746,15 @@ TYPEINFO(/obj/machinery/sleeper/port_a_medbay)
 		return
 	if (!occupant)
 		return
+	var/home_string = "Off-Station Location"
+	if (!src.homeloc) // ???
+		home_string = "N/A"
+	else
+		var/area/home_area = get_area(src.homeloc)
+		if (istype(home_area, /area/station))
+			home_string = home_area.name
 
-	var/PDAalert = "[src.name] has returned to [get_area(src.homeloc)] with a "
+	var/PDAalert = "[src.name] has returned to [home_string] with a "
 	var/alertgroup = MGA_MEDCRIT
 	if (isdead(occupant))
 		PDAalert += "deceased body - please process the occupant as soon as possible."
