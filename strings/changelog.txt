@@ -1,5 +1,9 @@
 
 (t)tue may 12 26
+(u)Bonnedav
+(p)26583
+(e)|
+(+)Computer Operators now spawn a box of useful floppy disks, an IT toolbelt, a cable coil, and the frequency reference sheet.
 (u)glowbold
 (e)⚖💡|C-Balance, A-Station-Systems
 (*)Portable machinery like the Port-A-Medbay only show "Off-Station Location" when the location or home is not on station.
