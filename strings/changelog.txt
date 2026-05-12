@@ -1,5 +1,7 @@
 
 (t)tue may 12 26
+(u)LeahTheTech
+(*)Lightbreaker changes: TC cost 4 -> 3, rewind time 30 -> 20 seconds, rewind action is now quieter and keeps its progress when interrupted, 1 second cooldown added to activation to prevent all charges being used at once in a panic.
 (u)LorrMaster
 (p)26576
 (e)🎨🧱🌱|C-Sprites, A-Materials, A-Hydroponics
