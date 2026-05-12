@@ -746,7 +746,7 @@ TYPEINFO(/obj/machinery/sleeper/port_a_medbay)
 		return
 	if (!occupant)
 		return
-	var/home_string = "Off-Station Location"
+	var/home_string = "Off-[global.station_or_ship()] Location"
 	if (!src.homeloc) // ???
 		home_string = "N/A"
 	else

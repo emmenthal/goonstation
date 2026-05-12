@@ -109,7 +109,7 @@
 				for (var/obj/O in src.machinerylist )
 					if (istype(O, src.our_machinery))
 						var/area/A = get_area(O)
-						var/area_string = "Off-Station Location"
+						var/area_string = "Off-[global.station_or_ship()] Location"
 						if (istype(A, /area/station))
 							area_string = A
 						. += "<A href='byond://?src=\ref[src];op=control;machinery=\ref[O]'>[O] at [area_string]</A><BR>"
@@ -119,11 +119,11 @@
 		else // Control a particular piece of machinery.
 
 			. += "<B>[src.active]</B><BR> Status: (<A href='byond://?src=\ref[src];op=control;machinery=\ref[src.active]'><i>refresh</i></A>)<BR>"
-			var/area_string = "Off-Station Location"
+			var/area_string = "Off-[global.station_or_ship()] Location"
 			var/area/A = get_area(src.active)
 			if (istype(A, /area/station))
 				area_string = A.name
-			var/home_string = "Off-Station Location"
+			var/home_string = "Off-[global.station_or_ship()] Location"
 
 			if (istype(src.active, /obj/machinery/port_a_brig/))
 				var/obj/machinery/port_a_brig/P2 = src.active
