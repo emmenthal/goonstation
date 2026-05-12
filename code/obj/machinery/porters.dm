@@ -197,9 +197,6 @@ TYPEINFO(/obj/item/remote/porter)
 			return
 
 		for (var/obj/machinery/port_a_brig/M in by_cat[TR_CAT_PORTABLE_MACHINERY])
-			var/turf/M_loc = get_turf(M)
-			if (M && M_loc && isturf(M_loc))
-				continue
 			if (!(M in src.machinerylist))
 				var/area_string = "Off-[global.station_or_ship()] Location"  // Don't show stuff in "somewhere", okay.
 				var/area/A = get_area(M)
@@ -220,9 +217,6 @@ TYPEINFO(/obj/item/remote/porter)
 			return
 
 		for (var/obj/machinery/sleeper/port_a_medbay/M in by_cat[TR_CAT_PORTABLE_MACHINERY])
-			var/turf/M_loc = get_turf(M)
-			if (M && M_loc && isturf(M_loc))
-				continue
 			if (!(M in src.machinerylist))
 				var/area_string = "Off-[global.station_or_ship()] Location"  // Don't show stuff in "somewhere", okay.
 				var/area/A = get_area(M)
@@ -248,14 +242,11 @@ TYPEINFO(/obj/item/remote/porter/port_a_sci)
 			return
 
 		for (var/obj/storage/closet/port_a_sci/M in by_cat[TR_CAT_PORTABLE_MACHINERY])
-			if (M && M_loc && isturf(M_loc))
-				continue
 			if (!(M in src.machinerylist))
 				var/area_string = "Off-[global.station_or_ship()] Location"  // Don't show stuff in "somewhere", okay.
 				var/area/A = get_area(M)
 				if (istype(A, /area/station))
 					area_string = A.name
-			if (!(M in src.machinerylist))
 				src.machinerylist["[src.machinery_name] #[src.machinerylist.len + 1] at [area_string]"] += M // Don't remove the #[number] part here.
 		return
 
@@ -271,15 +262,11 @@ TYPEINFO(/obj/item/remote/porter/port_a_sci)
 			return
 
 		for (var/obj/machinery/vending/port_a_nanomed/M in by_cat[TR_CAT_PORTABLE_MACHINERY])
-			var/turf/M_loc = get_turf(M)
-			if (M && M_loc && isturf(M_loc))
-				continue
 			if (!(M in src.machinerylist))
 				var/area_string = "Off-[global.station_or_ship()] Location"  // Don't show stuff in "somewhere", okay.
 				var/area/A = get_area(M)
 				if (istype(A, /area/station))
 					area_string = A.name
-			if (!(M in src.machinerylist))
 				src.machinerylist["[src.machinery_name] #[src.machinerylist.len + 1] at [area_string]"] += M // Don't remove the #[number] part here.
 		return
 
@@ -295,15 +282,11 @@ TYPEINFO(/obj/item/remote/porter/port_a_sci)
 			return
 
 		for (var/obj/machinery/computer/genetics/portable/M in by_cat[TR_CAT_PORTABLE_MACHINERY])
-			var/turf/M_loc = get_turf(M)
-			if (M && M_loc && isturf(M_loc))
-				continue
 			if (!(M in src.machinerylist))
 				var/area_string = "Off-[global.station_or_ship()] Location"  // Don't show stuff in "somewhere", okay.
 				var/area/A = get_area(M)
 				if (istype(A, /area/station))
 					area_string = A.name
-			if (!(M in src.machinerylist))
 				src.machinerylist["[src.machinery_name] #[src.machinerylist.len + 1] at [area_string]"] += M // Don't remove the #[number] part here.
 		return
 
@@ -320,15 +303,12 @@ TYPEINFO(/obj/item/remote/porter/port_a_sci)
 
 		for (var/obj/submachine/laundry_machine/portable/LP in by_cat[TR_CAT_PORTABLE_MACHINERY])
 			var/turf/T = get_turf(LP)
-			if (M && M_loc && isturf(M_loc))
-				continue
-			if (!(M in src.machinerylist))
+			if (!(LP in src.machinerylist))
 				var/area_string = "Off-[global.station_or_ship()] Location"  // Don't show stuff in "somewhere", okay.
-				var/area/A = get_area(M)
+				var/area/A = get_area(LP)
 				if (istype(A, /area/station))
 					area_string = A.name
-			if (!(M in src.machinerylist))
-				src.machinerylist["[src.machinery_name] #[src.machinerylist.len + 1] at [area_string]"] += M // Don't remove the #[number] part here.
+				src.machinerylist["[src.machinery_name] #[src.machinerylist.len + 1] at [area_string]"] += LP // Don't remove the #[number] part here.
 		return
 
 /obj/item/remote/busted
