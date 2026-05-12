@@ -122,6 +122,7 @@
 			return
 
 		message = user.say(message, flags = SAYFLAG_DO_NOT_OUTPUT)?.content
+		message = STRIP_MUTABLE_CONTENT_TAGS(message)
 		message = sanitize(adminscrub(message))
 		if (!message)
 			return
