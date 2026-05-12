@@ -1,3 +1,9 @@
+
+(t)tue may 12 26
+(u)LorrMaster
+(p)26576
+(e)🎨🧱🌱|C-Sprites, A-Materials, A-Hydroponics
+(*)New wood log sprites for various stack sizes. Wood planks color adjusted.
 (t)mon may 11 26
 (u)LeahTheTech
 (+)If there is no captain in the round, Jones will now guard the auth disk.
