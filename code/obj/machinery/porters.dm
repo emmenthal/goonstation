@@ -302,7 +302,6 @@ TYPEINFO(/obj/item/remote/porter/port_a_sci)
 			return
 
 		for (var/obj/submachine/laundry_machine/portable/LP in by_cat[TR_CAT_PORTABLE_MACHINERY])
-			var/turf/T = get_turf(LP)
 			if (!(LP in src.machinerylist))
 				var/area_string = "Off-[global.station_or_ship()] Location"  // Don't show stuff in "somewhere", okay.
 				var/area/A = get_area(LP)
